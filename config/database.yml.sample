@@ -1,0 +1,15 @@
+defaults: &defaults
+  adapter: postgresql
+  host: localhost
+  username: fantasy
+  password: password
+
+development:
+  <<: *defaults
+  database: fantasy_development
+
+test: &test
+  <<: *defaults
+  database: fantasy_test
+
+
